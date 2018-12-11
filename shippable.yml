@@ -13,5 +13,5 @@ jobs:
             - META=$(shipctl get_resource_meta test_kv)
             - echo $META/integration.env
             - cat $META/integration.env
-            - echo "foo: $foo"
-            - echo "baz: $baz"
+            - echo "foo $foo"
+            - echo "baz $baz"
