@@ -4,6 +4,7 @@ jobs:
     integrations:
       - test_kv
     steps:
+      - IN: test_kv
       - TASK:
           script:
             - META=$(shipctl get_resource_meta test_kv)
