@@ -1,8 +1,11 @@
+resources:
+  - name: test_kv
+    type: integration
+    integration: test_kv
+    
 jobs:
   - name: test
     type: runSh
-    integrations:
-      - test_kv
     steps:
       - IN: test_kv
       - TASK:
