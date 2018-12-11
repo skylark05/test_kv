@@ -1,0 +1,10 @@
+jobs:
+  - name: test
+    type: runSh
+    integrations:
+      - test_kv
+    steps:
+      TASK:
+        script:
+          - META=$(shipctl get_resource_meta test_kv)
+          - echo $META/integration.env
