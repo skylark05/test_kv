@@ -12,3 +12,4 @@ jobs:
           script:
             - META=$(shipctl get_resource_meta test_kv)
             - echo $META/integration.env
+            - cat $META/integration.env
